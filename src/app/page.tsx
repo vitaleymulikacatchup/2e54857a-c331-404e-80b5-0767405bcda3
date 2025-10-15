@@ -8,6 +8,7 @@ import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
 import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
+import { Zap, CheckCircle, Sparkles, Award } from 'lucide-react';
 
 const assetMap = [
   { id: 'heroImage', url: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'A robotic hand reaching into a digital network on a blue background, symbolizing AI technology.' },
@@ -57,8 +58,8 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <FeatureCardTwo
             features={[
-              { title: 'Custom AI Solutions', description: 'Tailored to your specific business needs.', icon: 'Zap' },
-              { title: 'Seamless Integration', description: 'Integrates with your existing systems effortlessly.', icon: 'CheckCircle' }
+              { title: 'Custom AI Solutions', description: 'Tailored to your specific business needs.', icon: Zap },
+              { title: 'Seamless Integration', description: 'Integrates with your existing systems effortlessly.', icon: CheckCircle }
             ]}
             title="Our Features"
             className="bg-blue-50"
@@ -71,8 +72,8 @@ export default function Home() {
           <PricingCardOne
             title="Choose Your Plan"
             plans={[
-              { id: 'starter', price: '$29/mo', subtitle: 'Ideal for small teams', features: ['5 AI projects', 'Basic support'], badge: 'Starter', badgeIcon: 'Sparkles' },
-              { id: 'enterprise', price: '$99/mo', subtitle: 'All-in-one solution', features: ['Unlimited projects', '24/7 support'], badge: 'Best Value', badgeIcon: 'Award' }
+              { id: 'starter', price: '$29/mo', subtitle: 'Ideal for small teams', features: ['5 AI projects', 'Basic support'], badge: 'Starter', badgeIcon: Sparkles },
+              { id: 'enterprise', price: '$99/mo', subtitle: 'All-in-one solution', features: ['Unlimited projects', '24/7 support'], badge: 'Best Value', badgeIcon: Award }
             ]}
             className="bg-blue-50"
             textBoxTitleClassName="text-blue-900"
