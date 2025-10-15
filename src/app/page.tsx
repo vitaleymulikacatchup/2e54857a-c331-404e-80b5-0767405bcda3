@@ -1,4 +1,4 @@
-use client
+"use client";
 
 import { ThemeProvider } from '@/providers/ThemeProvider';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
@@ -12,7 +12,7 @@ import FooterBase from '@/components/sections/footer/FooterBase';
 const assetMap = [
   { id: 'heroImage', url: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'A robotic hand reaching into a digital network on a blue background, symbolizing AI technology.' },
   { id: 'aboutImage', url: 'https://images.pexels.com/photos/34234301/pexels-photo-34234301.png?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'Two professionals working at a shared office desk, top view.' },
-  { id: 'contactImage', url: 'https://images.pexels.com/photos/2794212/pexels-photo-2794212.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'A woman sitting against a motivational mural reading 'What You Do Matters' in Birmingham, AL.' }
+  { id: 'contactImage', url: 'https://images.pexels.com/photos/2794212/pexels-photo-2794212.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'A woman sitting against a motivational mural reading "What You Do Matters" in Birmingham, AL.' }
 ];
 
 export default function Home() {
@@ -72,8 +72,7 @@ export default function Home() {
             title="Choose Your Plan"
             plans={[
               { id: 'starter', price: '$29/mo', subtitle: 'Ideal for small teams', features: ['5 AI projects', 'Basic support'], badge: 'Starter', badgeIcon: 'Sparkles' },
-              { id: 'enterprise', price: '$99/mo', subtitle: 'All-in-one solution', features: ['Unlimited projects', '24/7 support'], badge: 'Best Value', badgeIcon: 'Award' },
-              { id: 'basic', price: '$49/mo', subtitle: 'Suitable for startups', features: ['3 AI projects', 'Email support'], badge: 'Basic', badgeIcon: 'Sparkles' } 
+              { id: 'enterprise', price: '$99/mo', subtitle: 'All-in-one solution', features: ['Unlimited projects', '24/7 support'], badge: 'Best Value', badgeIcon: 'Award' }
             ]}
             className="bg-blue-50"
             textBoxTitleClassName="text-blue-900"
